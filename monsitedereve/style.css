@@ -1,0 +1,92 @@
+
+/* ===================== */
+/* CSS PRINCIPAL          */
+/* ===================== */
+
+/* --- Iframe pleine page --- */
+iframe {
+    height: 100vh; /* Hauteur : 100% de la fenêtre */
+    width: 100%;   /* Largeur : 100% de la fenêtre */
+}
+
+/* --- Corps de la page --- */
+body {
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+    padding: 0; /* Supprime le padding par défaut */
+    background-color: #f9e6f7; /* Fond rose très pâle */
+    font-family: 'Poppins', sans-serif; /* Police moderne et élégante */
+    font-size: 16px; /* Taille de base du texte */
+    color: #333; /* Couleur du texte principale */
+}
+
+/* --- Images --- */
+img {
+    float: left; /* Les images flottent à gauche */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* --- En-têtes de tableau --- */
+th {
+    width: 200px; /* Largeur fixe pour uniformité */
+}
+
+/* --- Listes --- */
+ul {
+    list-style-type: square; /* Puces carrées */
+    padding-left: 20px; /* Décalage du texte par rapport au bord */
+}
+
+/* --- Entête de page --- */
+#entete-de-page {
+    padding: 10px; /* Espace intérieur */
+    height: 100px; /* Hauteur de l'entête */
+    background-color: #ffe6f0; /* Rose pâle */
+    font-size: 32px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    font-variant: small-caps; /* Texte en petites majuscules */
+    text-align: center; /* Centrage du texte */
+    color: #b347a8; /* Couleur du texte de l'entête */
+}
+
+/* --- Menu --- */
+#bloc-menu {
+    height: 50px; /* Hauteur du menu */
+    background-color: #ffe6f0; /* Même rose pâle pour cohérence */
+    text-align: center; /* Centrer les boutons du menu */
+    line-height: 50px; /* Alignement vertical des textes */
+}
+
+/* --- Contenu principal --- */
+#contenu {
+    padding: 20px; /* Espace intérieur du bloc contenu */
+    background-color: #f0f0f0; /* Gris très clair pour contraste */
+    border-radius: 10px; /* Coins arrondis pour un look doux */
+    margin: 20px auto; /* Centrer le bloc et ajouter marge verticale */
+    max-width: 1200px; /* Largeur maximale pour grands écrans */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Ombre douce pour profondeur */
+}
+
+/* --- Section infos --- */
+#infos {
+    color: #3d3d7e; /* Bleu doux */
+    font-style: italic; /* Texte en italique */
+}
+
+/* --- Pied de page --- */
+#pied-de-page {
+    padding: 10px; /* Espace intérieur */
+    background-color: #ffe6f0; /* Même rose pâle pour cohérence */
+    font-size: 12px; /* Texte plus petit */
+    text-align: center; /* Centrer le texte */
+    color: #666; /* Gris moyen pour contraste léger */
+}
+
+/* --- Boutons --- */
+.bouton {
+    display: inline-block; /* Permet de gérer margin et padding */
+    text-align: center; /* Centrer le texte à l’intérieur */
+    text-decoration: underline; /* Souligné pour style léger */
+    font-weight: 500; /* Gras léger */
+    color: #f8b8ff; /* Couleur rose douce */
+    font

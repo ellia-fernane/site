@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Site d'Ellia </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+	<div id="entete-de-page"> 
+		<p> Accueil <br/> </p>
+		
+	</div> 
+	
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th><a href="index.html"> Accueil </a></th>
+		<th><a href="productions.html">Productions scolaires</a></th>
+		<th><a href="passions.html"> Mes Passions </a></th>
+		<th><a href="videos.html">Mes vidéos</a></th>
+		<th><a href="mon.site.de.reve">Mon site de rêve</a></th>
+		
+	</tr>
+	</table> <br/> 
+	<img src="avatar.png" alt="mon_avatar" height="10%" width="10%" class="arrondie">
+	<div id="contenu">
+		<h1> Site d'Ellia </h1>
+		<h2> Je me présente...</h2>
+		<p> Je suis...</p> 
+		<div><!--on ajoute le lien où se trouve la musique -->
+<audio  id="zic"src="music.mp3"></audio>
+<!--on nomme les boutons et leur statut -->
+<div>
+<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
+<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+</div>
+<!--on écrit les variable du script -->
+<script>
+<!--on attribue valeur et fonction de chaque bouton -->
+function changeState(x){
+let boutons = document.querySelectorAll(".bouton");
+let audio = document.querySelector("#zic");
+for(let i =0; i<boutons.length; i++){
+boutons[i].classList.remove("active");
+}
+boutons[x].classList.add("active");
+if(x == 0){
+audio.play();
+}
+if(x == 1){
+audio.pause();
+}
+if(x == 2){
+audio.pause();
+audio.currentTime = 0;
+}
+}
+</script> </div>
+			
+		<hr>
+		<div id="infos">
+			<h3> A lire aussi: </h3>
+			<ul>
+				<li> file:///K:/usersthawspace/Users/Elfernane/Documents/SNT%20EF/02%20WEB/Mon%20site%2020-01/passions.html </li>
+				<li> Lien vers un site </li>
+			</ul>
+		</div>
+	</div> <br/> 
+	
+	<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : 16/12/2025 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Ellia </p>
+	</div> <br/> 
+
+</body>
+
+</html>
