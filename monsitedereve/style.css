@@ -3,77 +3,122 @@
 iframe {
     height: 100vh; /* La vidéo prend toute la hauteur de l’écran */
     width: 100%;   /* La vidéo prend toute la largeur */
+    border: 4px solid #b347a8; /* Bordure rose/violet */
+    border-radius: 12px; /* Coins arrondis */
 }
 
 body {
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les espaces par défaut */
-    background-color: #f9e6f7; /* Fond rose clair */
-    font-family: 'Poppins', sans-serif; /* Police moderne */
-    font-size: 16px; /* Taille normale du texte */
-    color: #333; /* Couleur principale du texte */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f9e6f7, #ffe6f0); /* Dégradé rose clair */
+    font-family: 'Poppins', 'Roboto', sans-serif; /* Plusieurs polices modernes */
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6; /* Meilleure lisibilité */
 }
 
 img {
-    float: left; /* Image placée à gauche du texte */
-    margin-right: 20px; /* Espace entre image et texte */
-    border-radius: 8px; /* Coins arrondis */
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 12px;
+    border: 2px solid #f8b8ff; /* Bordure rose clair */
 }
 
 th {
-    width: 200px; /* Largeur fixe */
+    width: 200px;
+    background-color: #f8b8ff; /* Fond rose clair */
+    color: #3d3d7e; /* Texte bleu */
+    padding: 8px;
+    border-radius: 6px;
 }
 
 ul {
-    list-style-type: square; /* Puces carrées */
-    padding-left: 20px; /* Décalage vers la droite */
+    list-style-type: square;
+    padding-left: 20px;
+    color: #b347a8; /* Puces rose/violet */
+    font-family: 'Arial', sans-serif; /* Variation de police */
 }
 
 #entete-de-page {
-    padding: 10px; /* Espace intérieur */
-    height: 100px; /* Hauteur du bloc */
-    background-color: #ffe6f0; /* Fond rose pâle */
-    font-size: 32px; /* Texte plus grand */
-    font-weight: bold; /* Texte en gras */
-    font-variant: small-caps; /* Petites majuscules */
-    text-align: center; /* Texte centré */
-    color: #b347a8; /* Couleur rose/violet */
+    padding: 10px;
+    height: 100px;
+    background: linear-gradient(to right, #ffe6f0, #f9e6f7);
+    font-size: 36px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    color: #b347a8;
+    text-shadow: 1px 1px 3px #f8b8ff; /* Ombre douce du texte */
+    font-family: 'Georgia', 'Poppins', serif; /* Mélange de polices */
 }
 
 #bloc-menu {
-    height: 50px; /* Hauteur du menu */
-    background-color: #ffe6f0; /* Même couleur que l’en-tête */
-    text-align: center; /* Liens centrés */
-    line-height: 50px; /* Centre verticalement le texte */
+    height: 50px;
+    background-color: #ffe6f0;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Verdana', sans-serif;
+}
+
+#bloc-menu a {
+    color: #b347a8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+#bloc-menu a:hover {
+    color: #ff66c4;
+    text-decoration: underline;
 }
 
 #contenu {
-    padding: 20px; /* Espace intérieur */
-    background-color: #f0f0f0; /* Fond gris clair */
-    border-radius: 10px; /* Coins arrondis */
-    margin: 20px auto; /* Centrage du bloc */
-    max-width: 1200px; /* Largeur maximale */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Ombre légère */
+    padding: 25px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    font-family: 'Roboto', 'Poppins', sans-serif;
 }
 
 #infos {
-    color: #3d3d7e; /* Couleur bleue */
-    font-style: italic; /* Texte en italique */
+    color: #3d3d7e;
+    font-style: italic;
+    font-family: 'Courier New', monospace; /* Changement de police pour infos */
+    background-color: #f8e6ff; /* Fond violet clair */
+    padding: 10px;
+    border-radius: 8px;
 }
 
 #pied-de-page {
-    padding: 10px; /* Espace intérieur */
-    background-color: #ffe6f0; /* Fond rose pâle */
-    font-size: 12px; /* Texte plus petit */
-    text-align: center; /* Texte centré */
-    color: #666; /* Couleur grise */
+    padding: 10px;
+    background-color: #ffe6f0;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    font-family: 'Tahoma', sans-serif;
 }
 
 .bouton {
-    display: inline-block; /* Permet de régler taille et marges */
-    text-align: center; /* Texte centré */
-    text-decoration: underline; /* Texte souligné */
-    font-weight: 500; /* Légèrement en gras */
-    color: #f8b8ff; /* Rose clair */
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #f8b8ff;
+    background: linear-gradient(to right, #ff99cc, #ff66c4); /* Dégradé rose */
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
+
+.bouton:hover {
+    color: #fff;
+    background: #b347a8;
+    text-decoration: none;
+    transform: scale(1.05); /* Effet hover dynamique */
+}
+
+    
+
 
