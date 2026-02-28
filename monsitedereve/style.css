@@ -1,44 +1,48 @@
-/* Style principal du site */
-
+/* Iframe vidéos */
 iframe {
-    height: 100vh; /* La vidéo prend toute la hauteur de l’écran */
-    width: 100%;   /* La vidéo prend toute la largeur */
-    border: 4px solid #b347a8; /* Bordure rose/violet */
-    border-radius: 12px; /* Coins arrondis */
+    height: 100vh; /* hauteur écran */
+    width: 100%;   /* largeur totale */
+    border: 4px solid #b347a8; /* bordure rose/violet */
+    border-radius: 12px; /* coins arrondis */
 }
 
+/* Corps de page */
 body {
-    margin: 0;
+    margin: 0; 
     padding: 0;
-    background: linear-gradient(120deg, #f9e6f7, #ffe6f0); /* Dégradé rose clair */
-    font-family: 'Poppins', 'Roboto', sans-serif; /* Plusieurs polices modernes */
+    background: linear-gradient(120deg, #f9e6f7, #ffe6f0); /* fond dégradé rose clair */
+    font-family: 'Poppins', 'Roboto', 'Lato', sans-serif; /* plusieurs polices modernes */
     font-size: 16px;
     color: #333;
-    line-height: 1.6; /* Meilleure lisibilité */
+    line-height: 1.6; /* lisibilité */
 }
 
+/* Images */
 img {
     float: left;
     margin: 0 20px 20px 0;
     border-radius: 12px;
-    border: 2px solid #f8b8ff; /* Bordure rose clair */
+    border: 2px solid #f8b8ff; /* bordure rose clair */
 }
 
+/* Tableau */
 th {
     width: 200px;
-    background-color: #f8b8ff; /* Fond rose clair */
-    color: #3d3d7e; /* Texte bleu */
+    background-color: #f8b8ff; /* fond rose clair */
+    color: #3d3d7e; /* texte bleu */
     padding: 8px;
     border-radius: 6px;
 }
 
+/* Liste */
 ul {
     list-style-type: square;
     padding-left: 20px;
-    color: #b347a8; /* Puces rose/violet */
-    font-family: 'Arial', sans-serif; /* Variation de police */
+    color: #b347a8; /* puces rose/violet */
+    font-family: 'Arial', 'Verdana', sans-serif; /* variation de police */
 }
 
+/* En-tête */
 #entete-de-page {
     padding: 10px;
     height: 100px;
@@ -48,16 +52,17 @@ ul {
     font-variant: small-caps;
     text-align: center;
     color: #b347a8;
-    text-shadow: 1px 1px 3px #f8b8ff; /* Ombre douce du texte */
-    font-family: 'Georgia', 'Poppins', serif; /* Mélange de polices */
+    text-shadow: 1px 1px 3px #f8b8ff;
+    font-family: 'Georgia', 'Poppins', 'Lato', serif;
 }
 
+/* Menu */
 #bloc-menu {
     height: 50px;
     background-color: #ffe6f0;
     text-align: center;
     line-height: 50px;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Verdana', 'Trebuchet MS', sans-serif;
 }
 
 #bloc-menu a {
@@ -72,6 +77,7 @@ ul {
     text-decoration: underline;
 }
 
+/* Contenu principal */
 #contenu {
     padding: 25px;
     background-color: #f0f0f0;
@@ -79,46 +85,51 @@ ul {
     margin: 20px auto;
     max-width: 1200px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    font-family: 'Roboto', 'Poppins', sans-serif;
+    font-family: 'Roboto', 'Poppins', 'Lato', sans-serif;
 }
 
+/* Infos spécifiques */
 #infos {
     color: #3d3d7e;
     font-style: italic;
-    font-family: 'Courier New', monospace; /* Changement de police pour infos */
-    background-color: #f8e6ff; /* Fond violet clair */
+    font-family: 'Courier New', 'Monaco', monospace;
+    background-color: #f8e6ff;
     padding: 10px;
     border-radius: 8px;
 }
 
+/* Pied de page */
 #pied-de-page {
     padding: 10px;
     background-color: #ffe6f0;
     font-size: 12px;
     text-align: center;
     color: #666;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Tahoma', 'Arial', sans-serif;
 }
 
+/* Boutons */
 .bouton {
     display: inline-block;
     text-align: center;
     text-decoration: underline;
     font-weight: 600;
     color: #f8b8ff;
-    background: linear-gradient(to right, #ff99cc, #ff66c4); /* Dégradé rose */
+    background: linear-gradient(to right, #ff99cc, #ff66c4); /* dégradé rose */
     padding: 8px 15px;
     border-radius: 8px;
     transition: all 0.3s ease;
+    font-family: 'Poppins', 'Lato', sans-serif; /* police bouton */
 }
 
 .bouton:hover {
     color: #fff;
     background: #b347a8;
     text-decoration: none;
-    transform: scale(1.05); /* Effet hover dynamique */
-}
+    transform: scale(1.05); /* effet hover */
+}   
+   
 
-    
 
 
+  
