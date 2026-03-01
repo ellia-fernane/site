@@ -35,8 +35,15 @@
 		<h2>Je me présente...</h2>
 		<p>Je suis...</p>
 
-		<!-- on ajoute le lien où se trouve la musique -->
-		<audio src="music.mp3" controls></audio>
+		<!-- musique -->
+		<audio id="zic" src="music.mp3"></audio>
+
+		<!-- boutons -->
+		<div>
+			<button onclick="document.getElementById('zic').play()">PLAY</button>
+			<button onclick="document.getElementById('zic').pause()">PAUSE</button>
+			<button onclick="document.getElementById('zic').pause(); document.getElementById('zic').currentTime=0;">STOP</button>
+		</div>
 
 		<hr>
 
@@ -60,4 +67,5 @@
 	</div>
 
 </body>
-</html>
+</html>			
+			
