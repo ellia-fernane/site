@@ -1,94 +1,96 @@
-/* Pleine hauteur pour les iframes */
-iframe {
-    height: 100vh;
-    width: 100%;
-}
-
 /* Style général de la page */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f4c9f5;
-    font-family: 'Georgia', serif;
-    font-size: 16px;
-}
-
-/* Style des boutons */
-.bouton {
-    display: inline-block;
-    text-align: center;
-    text-decoration: underline;
-    font-weight: 400;
-    color: #F8B8FF;
-    font-size: 4rem;
-    line-height: 2em;
-    margin: 0 20px; /* espace entre les boutons */
-}
-
-/* Bouton actif */
-.bouton.active {
-    color: #08c5F3;
-}
-
-/* Images flottantes */
-img {
-    float: left;
-    margin-right: 20px;
-}
-
-/* Largeur des titres de tableau */
-th {
-    width: 200px;
-}
-
-/* Style des listes */
-ul {
-    list-style-type: square;
+	margin: 0;
+	padding: 0;
+	background-color: #f4c9f5;
+	font-family: 'Georgia', serif;
+	font-size: 16px;
 }
 
 /* En-tête */
 #entete-de-page {
-    padding: 5px;
-    height: 100px;
-    background-color: #FFE3E3;
-    font-size: 32px;
-    font-weight: bold;
-    font-variant: small-caps;
-    text-align: center;
+	background-color: #FFE3E3;
+	height: 100px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-top: 20px;
 }
 
 /* Menu */
 #bloc-menu {
-    height: 36px;
-    background-color: #FFE3E3;
-    text-align: center;
-    color: white;
+	background-color: #FFE3E3;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Cellules du menu */
+#bloc-menu th {
+	width: 200px;
+	padding: 8px;
+}
+
+/* Liens du menu */
+#bloc-menu a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+/* Image avatar */
+img {
+	float: left;
+	margin: 20px;
+}
+
+/* Image arrondie */
+.arrondie {
+	border-radius: 7px;
 }
 
 /* Contenu principal */
 #contenu {
-    padding: 10px;
-    background-color: beige;
+	background-color: beige;
+	padding: 20px;
+	min-height: 300px;
 }
 
 /* Bloc informations */
 #infos {
-    color: darkblue;
-    font-style: italic;
+	color: darkblue;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+/* Liste */
+ul {
+	list-style-type: square;
 }
 
 /* Pied de page */
 #pied-de-page {
-    padding: 5px;
-    background-color: #FFE3E3;
-    font-size: 11px;
+	background-color: #FFE3E3;
+	font-size: 11px;
+	text-align: center;
+	padding: 10px;
+	clear: both;
 }
 
-/* Image aux bords arrondis */
-.arrondie {
-    border-radius: 7px;
+/* boutons */
+button {
+	background-color: transparent; /* pas de fond */
+	border: none; /* enlève le contour */
+	text-decoration: underline; /* souligné */
+	color: #F8B8FF; /* couleur rose */
+	font-size: 2rem;
+	margin: 0 20px;
+	cursor: pointer; /* main au survol */
+	font-family: 'Georgia', serif;
 }
-	
-	
 
-	
+/* effet au survol */
+button:hover {
+	color: #08c5F3; /* bleu au survol */
+} 
