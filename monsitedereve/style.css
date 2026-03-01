@@ -10,7 +10,7 @@ iframe {
 body {
     margin: 0; 
     padding: 0;
-    background: linear-gradient(120deg, #f9e6f7, #ffe6f0); /* fond dégradé rose clair */
+    background:#EEC7F2; /* fond  rose clair */
     font-family: 'Poppins', 'Roboto', 'Lato', sans-serif; /* plusieurs polices modernes */
     font-size: 16px;
     color: #333;
@@ -22,13 +22,13 @@ img {
     float: left;
     margin: 0 20px 20px 0;
     border-radius: 12px;
-    border: 2px solid #f8b8ff; /* bordure rose clair */
+    border: 2px solid #F8B8FF; /* bordure rose clair */
 }
 
 /* Tableau */
 th {
     width: 200px;
-    background-color: #f8b8ff; /* fond rose clair */
+    background-color: #F8b8FFF; /* fond rose clair */
     color: #3d3d7e; /* texte bleu */
     padding: 8px;
     border-radius: 6px;
@@ -59,7 +59,7 @@ ul {
 /* Menu */
 #bloc-menu {
     height: 50px;
-    background-color: #ffe6f0;
+    background-color: #D2CBD4;
     text-align: center;
     line-height: 50px;
     font-family: 'Verdana', 'Trebuchet MS', sans-serif;
@@ -90,7 +90,7 @@ ul {
 
 /* Infos spécifiques */
 #infos {
-    color: #3d3d7e;
+    color: #3D3D7E;
     font-style: italic;
     font-family: 'Courier New', 'Monaco', monospace;
     background-color: #f8e6ff;
@@ -133,3 +133,4 @@ ul {
 
 
   
+
