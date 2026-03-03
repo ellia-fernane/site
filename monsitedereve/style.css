@@ -1,136 +1,195 @@
-/* Iframe vidéos */
-iframe {
-    height: 100vh; /* hauteur écran */
-    width: 100%;   /* largeur totale */
-    border: 4px solid #b347a8; /* bordure rose/violet */
-    border-radius: 12px; /* coins arrondis */
-}
+/* ============================= */
+/* STYLE GLOBAL */
+/* ============================= */
 
-/* Corps de page */
 body {
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    background:#EEC7F2; /* fond  rose clair */
-    font-family: 'Poppins', 'Roboto', 'Lato', sans-serif; /* plusieurs polices modernes */
+    background: #EEC7F2;
+    font-family: 'Poppins', 'Roboto', 'Lato', sans-serif;
     font-size: 16px;
     color: #333;
-    line-height: 1.6; /* lisibilité */
+    line-height: 1.6;
 }
 
-/* Images */
+/* ============================= */
+/* NAVIGATION MODERNE */
+/* ============================= */
+
+nav {
+    background-color: #b347a8;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe6f0;
+}
+
+/* ============================= */
+/* CONTENU PRINCIPAL */
+/* ============================= */
+
+.content {
+    background-color: #ffffff;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ============================= */
+/* TITRES */
+/* ============================= */
+
+h1 {
+    text-align: center;
+    color: #b347a8;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #3d3d7e;
+    margin-top: 50px;
+}
+
+/* ============================= */
+/* PARAGRAPHES */
+/* ============================= */
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* IMAGES MODERNES */
+/* ============================= */
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
 img {
-    float: left;
-    margin: 0 20px 20px 0;
+    width: 45%;
+    max-width: 400px;
     border-radius: 12px;
-    border: 2px solid #F8B8FF; /* bordure rose clair */
+    border: 3px solid #F8B8FF;
+    transition: 0.3s;
 }
 
-/* Tableau */
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* VIDEOS RESPONSIVES */
+/* ============================= */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 30px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #b347a8;
+    border-radius: 12px;
+}
+
+/* ============================= */
+/* TABLEAU */
+/* ============================= */
+
 th {
     width: 200px;
-    background-color: #F8b8FFF; /* fond rose clair */
-    color: #3d3d7e; /* texte bleu */
+    background-color: #F8B8FF;
+    color: #3d3d7e;
     padding: 8px;
     border-radius: 6px;
 }
 
-/* Liste */
+/* ============================= */
+/* LISTES */
+/* ============================= */
+
 ul {
     list-style-type: square;
     padding-left: 20px;
-    color: #b347a8; /* puces rose/violet */
-    font-family: 'Arial', 'Verdana', sans-serif; /* variation de police */
-}
-
-/* En-tête */
-#entete-de-page {
-    padding: 10px;
-    height: 100px;
-    background: linear-gradient(to right, #ffe6f0, #f9e6f7);
-    font-size: 36px;
-    font-weight: bold;
-    font-variant: small-caps;
-    text-align: center;
     color: #b347a8;
-    text-shadow: 1px 1px 3px #f8b8ff;
-    font-family: 'Georgia', 'Poppins', 'Lato', serif;
 }
 
-/* Menu */
-#bloc-menu {
-    height: 50px;
-    background-color: #D2CBD4;
-    text-align: center;
-    line-height: 50px;
-    font-family: 'Verdana', 'Trebuchet MS', sans-serif;
-}
+/* ============================= */
+/* BOUTONS */
+/* ============================= */
 
-#bloc-menu a {
-    color: #b347a8;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-#bloc-menu a:hover {
-    color: #ff66c4;
-    text-decoration: underline;
-}
-
-/* Contenu principal */
-#contenu {
-    padding: 25px;
-    background-color: #f0f0f0;
-    border-radius: 12px;
-    margin: 20px auto;
-    max-width: 1200px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    font-family: 'Roboto', 'Poppins', 'Lato', sans-serif;
-}
-
-/* Infos spécifiques */
-#infos {
-    color: #3D3D7E;
-    font-style: italic;
-    font-family: 'Courier New', 'Monaco', monospace;
-    background-color: #f8e6ff;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-/* Pied de page */
-#pied-de-page {
-    padding: 10px;
-    background-color: #ffe6f0;
-    font-size: 12px;
-    text-align: center;
-    color: #666;
-    font-family: 'Tahoma', 'Arial', sans-serif;
-}
-
-/* Boutons */
 .bouton {
     display: inline-block;
     text-align: center;
-    text-decoration: underline;
     font-weight: 600;
-    color: #f8b8ff;
-    background: linear-gradient(to right, #ff99cc, #ff66c4); /* dégradé rose */
-    padding: 8px 15px;
+    color: white;
+    background: linear-gradient(to right, #ff99cc, #ff66c4);
+    padding: 10px 18px;
     border-radius: 8px;
     transition: all 0.3s ease;
-    font-family: 'Poppins', 'Lato', sans-serif; /* police bouton */
+    text-decoration: none;
 }
 
 .bouton:hover {
-    color: #fff;
     background: #b347a8;
-    text-decoration: none;
-    transform: scale(1.05); /* effet hover */
-}   
-   
+    transform: scale(1.05);
+}
 
+/* ============================= */
+/* PIED DE PAGE */
+/* ============================= */
 
+#pied-de-page {
+    padding: 15px;
+    background-color: #ffe6f0;
+    font-size: 13px;
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+}
 
-  
+/* ============================= */
+/* RESPONSIVE MOBILE */
+/* ============================= */
 
+@media (max-width: 768px) {
+
+    img {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
